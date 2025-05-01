@@ -650,6 +650,7 @@ dialog div p span:hover::after{
 
 .top-footer ul li:hover .txt-button{
     transform: scale(1);
+    color: black;
 }
 
 .top-footer ul li:hover .icon{
@@ -659,7 +660,7 @@ dialog div p span:hover::after{
 .top-footer ul li::before{
     content: '';
     position: absolute;
-    background-image: linear-gradient(45deg, #fb3997, #fecf12);
+    background-image: linear-gradient(45deg, white, white);
     inset: 0;
     opacity: 0;
     border-radius: 60px;
@@ -716,3 +717,4 @@ dialog div p span:hover::after{
     font-size: 20px;
     color: #000;
 }
+

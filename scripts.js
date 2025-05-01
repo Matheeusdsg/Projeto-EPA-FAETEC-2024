@@ -38,7 +38,7 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
     speed: 400,
     glare:true,
     "max-glare":
-     0.5
+    0.5
 });
 
 // preload
@@ -58,3 +58,18 @@ gsap.fromTo(".logo-name" , {
     duration:2,
     delay:0.5,
 })
+
+const botao = document.getElementById("copiarEmail");
+
+botao.addEventListener("click", () => {
+  const email = "contato@exemplo.com"; // substitua pelo seu e-mail real
+navigator.clipboard.writeText(email)
+    .then(() => {
+    botao.textContent = "Copiado!";
+    botao.style.color = "gray";
+    })
+    .catch(err => {
+        console.error("Erro ao copiar: ", err);
+    });
+});
+
