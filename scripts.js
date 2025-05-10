@@ -62,7 +62,7 @@ gsap.fromTo(".logo-name" , {
 const botao = document.getElementById("copiarEmail");
 
 botao.addEventListener("click", () => {
-  const email = "contato@exemplo.com"; // substitua pelo seu e-mail real
+const email = "matheeusdsginfo@gmail.com";
 navigator.clipboard.writeText(email)
     .then(() => {
     botao.textContent = "Copiado!";
